@@ -86,7 +86,7 @@ cp .env.example .env.local
 6. Put only the ID after `/f/` into `.env.local`:
 
 ```env
-FORMSPREE_FORM_ID=abcdwxyz
+FORMSPREE_FORM_ID=abcdefgh
 ```
 
 7. Restart the development server.
