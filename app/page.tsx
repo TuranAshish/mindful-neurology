@@ -15,6 +15,7 @@ import {
 } from "@/components/icons";
 import { Logo } from "@/components/logo";
 import { Testimonials } from "@/components/testimonials";
+import { StripeCheckoutButton } from "@/components/stripe-checkout-button";
 
 const services = [
   {
@@ -125,6 +126,7 @@ export default function Home() {
               <a href="#approach" className="inline-flex items-center justify-center gap-2 rounded-full border border-[#b9cec7] bg-white/75 px-7 py-4 text-sm font-semibold text-[#244b46] transition hover:-translate-y-0.5 hover:border-[#0f7466]">
                 Explore our approach
               </a>
+              <StripeCheckoutButton />
             </div>
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#55706b]">
               <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Board-certified neurology</span>
