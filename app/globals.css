@@ -1,37 +1,38 @@
 @import "tailwindcss";
 
 /* -------------------------------------------------------------------------- */
-/* Mindful Neurology — professional brand system                               */
-/* Palette sampled from the supplied artwork                                   */
+/* Mindful Neurology — lighter professional brand system                       */
+/* Soft medical blue / cyan palette                                            */
 /* -------------------------------------------------------------------------- */
 
 :root {
-  --background: #f7fbfd;
-  --foreground: #183f50;
+  --background: #fbfdff;
+  --foreground: #173c4d;
 
-  --brand-900: #186886; /* logo blue */
-  --brand-800: #237f97;
-  --brand-700: #5599b4; /* medium artwork blue */
-  --brand-600: #66a5bd; /* primary ribbon blue */
-  --brand-500: #2eb0be; /* logo cyan */
-  --brand-300: #aaceda; /* pale artwork blue */
-  --brand-200: #c6dee6;
-  --brand-100: #e8f3f7;
-  --brand-50: #f7fbfd;
+  --brand-900: #17627e;
+  --brand-800: #247c98;
+  --brand-700: #4f99b5;
+  --brand-600: #72b3c8;
+  --brand-500: #35b7c5;
+  --brand-400: #77ced8;
+  --brand-300: #b8dce7;
+  --brand-200: #d7ebf1;
+  --brand-100: #eef7fa;
+  --brand-50: #fbfdff;
 
   --surface: #ffffff;
-  --surface-soft: #eef6f9;
-  --surface-muted: #e2f0f5;
-  --border: #d2e5ec;
-  --border-strong: #b7d5e0;
+  --surface-soft: #f4fafc;
+  --surface-muted: #eaf5f8;
+  --border: #dcecf1;
+  --border-strong: #c6dfe8;
 
-  --text-primary: #183f50;
-  --text-secondary: #537586;
-  --text-muted: #7896a3;
+  --text-primary: #173c4d;
+  --text-secondary: #5b7d8d;
+  --text-muted: #86a1ad;
 
-  --shadow-sm: 0 1px 2px rgba(24, 104, 134, 0.05);
-  --shadow-md: 0 12px 32px rgba(24, 104, 134, 0.10);
-  --shadow-lg: 0 24px 64px rgba(24, 104, 134, 0.14);
+  --shadow-sm: 0 1px 2px rgba(23, 98, 126, 0.04);
+  --shadow-md: 0 12px 30px rgba(23, 98, 126, 0.08);
+  --shadow-lg: 0 24px 60px rgba(23, 98, 126, 0.11);
 
   --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-serif: Iowan Old Style, Palatino Linotype, Book Antiqua, Palatino, Georgia, serif;
@@ -54,7 +55,8 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 8% 0%, rgba(170, 206, 218, 0.28), transparent 28rem),
+    radial-gradient(circle at 8% 0%, rgba(184, 220, 231, 0.34), transparent 30rem),
+    radial-gradient(circle at 92% 8%, rgba(238, 247, 250, 0.85), transparent 32rem),
     linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, sans-serif;
@@ -67,7 +69,7 @@ body {
 }
 
 ::selection {
-  background: var(--brand-300);
+  background: var(--brand-200);
   color: var(--brand-900);
 }
 
@@ -99,7 +101,7 @@ button:not(:disabled) {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(46, 176, 190, 0.34);
+  outline: 3px solid rgba(53, 183, 197, 0.28);
   outline-offset: 3px;
 }
 
@@ -109,25 +111,25 @@ button:not(:disabled) {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.045;
+  opacity: 0.035;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
 }
 
 .hero-grid {
   background-image:
-    linear-gradient(rgba(24, 104, 134, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(24, 104, 134, 0.055) 1px, transparent 1px);
+    linear-gradient(rgba(23, 98, 126, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 98, 126, 0.04) 1px, transparent 1px);
   background-size: 42px 42px;
 }
 
-/* Professional hero treatment inspired by the artwork */
+/* Soft light hero */
 html:not(.dark) #top > section:first-of-type {
   background:
-    radial-gradient(ellipse at -8% 8%, rgba(85, 153, 180, 0.74) 0 19%, transparent 19.5%),
-    radial-gradient(ellipse at 4% -16%, rgba(102, 165, 189, 0.62) 0 31%, transparent 31.5%),
-    radial-gradient(ellipse at 18% -24%, rgba(170, 206, 218, 0.74) 0 34%, transparent 34.5%),
-    linear-gradient(135deg, #ffffff 35%, #f7fbfd 100%) !important;
+    radial-gradient(ellipse at -8% 8%, rgba(114, 179, 200, 0.42) 0 19%, transparent 19.5%),
+    radial-gradient(ellipse at 4% -16%, rgba(184, 220, 231, 0.64) 0 31%, transparent 31.5%),
+    radial-gradient(ellipse at 18% -24%, rgba(238, 247, 250, 0.92) 0 34%, transparent 34.5%),
+    linear-gradient(135deg, #ffffff 36%, #fbfdff 100%) !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -186,10 +188,10 @@ html:not(.dark) #top > section:first-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Light-theme remapping for the website's existing Tailwind colour classes    */
+/* Light theme remapping                                                       */
 /* -------------------------------------------------------------------------- */
 
-/* Primary dark green classes become the logo blue */
+/* Primary dark green classes become softer medical blue */
 html:not(.dark) :is(
   [class~="bg-[#173b38]"],
   [class~="bg-[#244b46]"],
@@ -212,7 +214,7 @@ html:not(.dark) :is(
   [class~="bg-[#f3f7f5]"],
   [class~="bg-[#f1f7f4]"]
 ) {
-  background-color: var(--brand-50) !important;
+  background-color: var(--surface-soft) !important;
 }
 
 html:not(.dark) :is(
@@ -233,7 +235,7 @@ html:not(.dark) :is(
   background-color: var(--surface-muted) !important;
 }
 
-/* Remove unrelated warm accents and keep one coherent medical brand palette */
+/* Replace warm/off-brand accents with soft blue */
 html:not(.dark) :is(
   [class~="bg-[#fff7e8]"],
   [class~="bg-[#e7f5ef]"],
@@ -251,13 +253,13 @@ html:not(.dark) :is(
   [class~="bg-white/70"],
   [class~="bg-white/65"]
 ) {
-  background-color: rgba(255, 255, 255, 0.86) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   -webkit-backdrop-filter: blur(18px) saturate(135%);
   backdrop-filter: blur(18px) saturate(135%);
 }
 
 html:not(.dark) [class~="bg-[#fbfdfc]/92"] {
-  background-color: rgba(255, 255, 255, 0.92) !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
   -webkit-backdrop-filter: blur(18px) saturate(135%);
   backdrop-filter: blur(18px) saturate(135%);
 }
@@ -267,7 +269,7 @@ html:not(.dark) :is(
   [class~="bg-[#d7e7de]/70"],
   [class~="bg-[#cfe7df]/60"]
 ) {
-  background-color: rgba(170, 206, 218, 0.34) !important;
+  background-color: rgba(184, 220, 231, 0.42) !important;
 }
 
 /* Headings and strong text */
@@ -277,7 +279,7 @@ html:not(.dark) :is(
   [class~="text-[#315c56]"],
   [class~="text-[#42645f]"]
 ) {
-  color: var(--brand-900) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Paragraph and metadata text */
@@ -301,7 +303,7 @@ html:not(.dark) :is(
 
 /* Accent text */
 html:not(.dark) [class~="text-[#0f7466]"] {
-  color: var(--brand-500) !important;
+  color: var(--brand-800) !important;
 }
 
 html:not(.dark) :is(
@@ -341,7 +343,7 @@ html:not(.dark) :is(
 }
 
 html:not(.dark) [class~="border-[#dbe7e3]/80"] {
-  border-color: rgba(210, 229, 236, 0.82) !important;
+  border-color: rgba(220, 236, 241, 0.9) !important;
 }
 
 html:not(.dark) [class~="ring-[#eef5f2]"] {
@@ -367,7 +369,7 @@ html:not(.dark) input:focus,
 html:not(.dark) select:focus,
 html:not(.dark) textarea:focus {
   border-color: var(--brand-500) !important;
-  box-shadow: 0 0 0 4px rgba(46, 176, 190, 0.12) !important;
+  box-shadow: 0 0 0 4px rgba(53, 183, 197, 0.12) !important;
   outline: none;
 }
 
@@ -380,58 +382,63 @@ html:not(.dark) :is(
   [class~="hover:bg-[#244b46]"],
   [class~="hover:bg-[#315c56]"]
 ):hover {
-  background-color: #145872 !important;
+  background-color: var(--brand-800) !important;
 }
 
 /* -------------------------------------------------------------------------- */
-/* Dark mode — same identity, not a separate colour scheme                     */
+/* Dark mode — lighter, softer dark theme                                      */
 /* -------------------------------------------------------------------------- */
 
 html.dark {
   color-scheme: dark;
 
-  --background: #071d28;
-  --foreground: #edf8fb;
+  --background: #102a36;
+  --foreground: #f3fbfd;
 
-  --surface: #0c2a37;
-  --surface-soft: #103644;
-  --surface-muted: #164454;
-  --border: #285566;
-  --border-strong: #397184;
+  --surface: #173744;
+  --surface-soft: #1e4351;
+  --surface-muted: #275364;
+  --border: #3f6877;
+  --border-strong: #578394;
 
-  --text-primary: #edf8fb;
-  --text-secondary: #a7c6d2;
-  --text-muted: #7fa4b3;
+  --text-primary: #f3fbfd;
+  --text-secondary: #c5dce5;
+  --text-muted: #9bb9c5;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.16);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.2);
 }
 
 html.dark body {
   background:
-    radial-gradient(circle at 8% 0%, rgba(85, 153, 180, 0.18), transparent 30rem),
-    linear-gradient(180deg, #071d28 0%, #0a2632 100%);
+    radial-gradient(circle at 8% 0%, rgba(114, 179, 200, 0.22), transparent 30rem),
+    radial-gradient(circle at 92% 8%, rgba(53, 183, 197, 0.12), transparent 32rem),
+    linear-gradient(180deg, #102a36 0%, #163744 100%);
 }
 
 html.dark ::selection {
-  background: var(--brand-500);
+  background: rgba(119, 206, 216, 0.42);
   color: #ffffff;
 }
 
 html.dark .noise::before {
-  opacity: 0.035;
+  opacity: 0.03;
   mix-blend-mode: screen;
 }
 
 html.dark .hero-grid {
   background-image:
-    linear-gradient(rgba(102, 165, 189, 0.085) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(102, 165, 189, 0.085) 1px, transparent 1px);
+    linear-gradient(rgba(184, 220, 231, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 220, 231, 0.07) 1px, transparent 1px);
 }
 
 html.dark #top > section:first-of-type {
   background:
-    radial-gradient(ellipse at -8% 8%, rgba(85, 153, 180, 0.30) 0 20%, transparent 20.5%),
-    radial-gradient(ellipse at 7% -18%, rgba(102, 165, 189, 0.21) 0 34%, transparent 34.5%),
-    radial-gradient(circle at 88% 10%, rgba(46, 176, 190, 0.10), transparent 28rem),
-    linear-gradient(145deg, #071d28 32%, #0d303e 100%) !important;
+    radial-gradient(ellipse at -8% 8%, rgba(114, 179, 200, 0.28) 0 20%, transparent 20.5%),
+    radial-gradient(ellipse at 7% -18%, rgba(184, 220, 231, 0.15) 0 34%, transparent 34.5%),
+    radial-gradient(circle at 88% 10%, rgba(53, 183, 197, 0.12), transparent 28rem),
+    linear-gradient(145deg, #102a36 32%, #193d4b 100%) !important;
 }
 
 html.dark :is(
@@ -471,7 +478,7 @@ html.dark :is(
   [class~="bg-[#0f7466]"],
   [class~="bg-[#176150]"]
 ) {
-  background-color: var(--brand-900) !important;
+  background-color: var(--brand-800) !important;
 }
 
 html.dark :is(
@@ -482,13 +489,15 @@ html.dark :is(
   [class~="bg-white/70"],
   [class~="bg-white/65"]
 ) {
-  background-color: rgba(12, 42, 55, 0.88) !important;
+  background-color: rgba(23, 55, 68, 0.88) !important;
   -webkit-backdrop-filter: blur(18px) saturate(130%);
   backdrop-filter: blur(18px) saturate(130%);
 }
 
 html.dark [class~="bg-[#fbfdfc]/92"] {
-  background-color: rgba(7, 29, 40, 0.92) !important;
+  background-color: rgba(16, 42, 54, 0.9) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+  backdrop-filter: blur(18px) saturate(130%);
 }
 
 html.dark :is(
@@ -496,9 +505,10 @@ html.dark :is(
   [class~="bg-[#d7e7de]/70"],
   [class~="bg-[#cfe7df]/60"]
 ) {
-  background-color: rgba(46, 176, 190, 0.16) !important;
+  background-color: rgba(119, 206, 216, 0.16) !important;
 }
 
+/* Text colors in dark mode */
 html.dark :is(
   [class~="text-[#173b38]"],
   [class~="text-[#244b46]"],
@@ -527,14 +537,14 @@ html.dark :is(
 }
 
 html.dark [class~="text-[#0f7466]"] {
-  color: #54c6d1 !important;
+  color: #8ee1e8 !important;
 }
 
 html.dark :is(
   [class~="text-[#9ed4c7]"],
   [class~="text-[#bfe5da]"]
 ) {
-  color: #8fc3d4 !important;
+  color: #b8dce7 !important;
 }
 
 html.dark [class~="text-[#b4c6c1]"] {
@@ -546,9 +556,10 @@ html.dark :is(
   [class~="text-[#176150]"],
   [class~="text-[#98483c]"]
 ) {
-  color: #66d0d7 !important;
+  color: #9be5eb !important;
 }
 
+/* Borders in dark mode */
 html.dark :is(
   [class~="border-[#cbdcd7]"],
   [class~="border-[#cfded9]"],
@@ -570,21 +581,22 @@ html.dark :is(
   [class~="border-white/70"],
   [class~="border-white/60"]
 ) {
-  border-color: rgba(143, 195, 212, 0.28) !important;
+  border-color: rgba(184, 220, 231, 0.26) !important;
 }
 
 html.dark [class~="border-[#dbe7e3]/80"] {
-  border-color: rgba(40, 85, 102, 0.84) !important;
+  border-color: rgba(63, 104, 119, 0.85) !important;
 }
 
 html.dark [class~="ring-[#eef5f2]"] {
-  --tw-ring-color: var(--surface-soft) !important;
+  --tw-ring-color: rgba(119, 206, 216, 0.18) !important;
 }
 
+/* Forms in dark mode */
 html.dark input,
 html.dark select,
 html.dark textarea {
-  background-color: #081f2a !important;
+  background-color: #183946 !important;
   border-color: var(--border-strong) !important;
   color: var(--text-primary) !important;
 }
@@ -597,13 +609,13 @@ html.dark textarea::placeholder {
 html.dark input:focus,
 html.dark select:focus,
 html.dark textarea:focus {
-  border-color: #54c6d1 !important;
-  box-shadow: 0 0 0 4px rgba(84, 198, 209, 0.12) !important;
+  border-color: #8ee1e8 !important;
+  box-shadow: 0 0 0 4px rgba(142, 225, 232, 0.14) !important;
   outline: none;
 }
 
 html.dark select option {
-  background-color: #081f2a;
+  background-color: #183946;
   color: var(--text-primary);
 }
 
@@ -615,12 +627,12 @@ html.dark :is(
   [class~="hover:bg-[#244b46]"],
   [class~="hover:bg-[#315c56]"]
 ):hover {
-  background-color: #145872 !important;
+  background-color: var(--brand-700) !important;
 }
 
 /* Partner logos and contained artwork remain natural and readable */
 html.dark [class~="object-contain"] {
-  filter: brightness(0.96) contrast(1.03);
+  filter: brightness(1.02) contrast(1.02);
 }
 
 /* Refined native scrollbar */
