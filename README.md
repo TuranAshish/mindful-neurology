@@ -163,6 +163,6 @@ public/images/           Local website imagery
 .env.example             Formspree configuration template
 ```
 
-## Light and dark appearance
+## Light and dark theme/appearance
 
 The header includes an appearance toggle. The selected theme is saved in the visitor's browser under `mindful-neuro-theme`. On a visitor's first visit, the site follows their operating-system light/dark preference. No external theme package is required.
