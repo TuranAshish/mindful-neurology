@@ -33,7 +33,7 @@ export function ContactForm() {
   const inputClass = "w-full rounded-2xl border border-[#cbdcd7] bg-white px-4 py-3.5 text-[15px] text-[#173b38] outline-none transition placeholder:text-[#8ba09b] focus:border-[#0f7466] focus:ring-4 focus:ring-[#0f7466]/10";
 
   return (
-    <form onSubmit={submit} className="grid gap-4 rounded-[2rem] bg-white p-5 shadow-[0_24px_80px_rgba(18,62,58,.12)] md:p-8">
+    <form data-animate="fade-left" data-tilt-card="" onSubmit={submit} className="tilt-card grid gap-4 rounded-[2rem] bg-white p-5 shadow-[0_24px_80px_rgba(18,62,58,.12)] md:p-8">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-2 text-sm font-semibold text-[#355a55]">
           Name
