@@ -42,7 +42,7 @@ const services = [
     description:
       "Our research collaborations explore how mind-body practices relate to symptoms, neural networks, and measurable clinical outcomes.",
     note: "Evidence-informed",
-  }
+  },
   {
     icon: AdvocacyIcon,
     number: "04",
