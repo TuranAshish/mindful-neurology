@@ -30,9 +30,9 @@ const services = [
   {
     icon: MeditationIcon,
     number: "02",
-    title: "Meditation courses",
+    title: "Meditation Webinars",
     description:
-      "Structured 6–8 week programs combining guided meditation, brain education, community reflection, and practical exercises.",
+      "Bi-monthly programs combining guided meditation, brain education, community reflection, and practical exercises.",
     note: "Online & group",
   },
   {
@@ -40,15 +40,15 @@ const services = [
     number: "03",
     title: "Innovative research",
     description:
-      "Research collaborations exploring how mind-body practices may relate to symptoms, neural networks, and measurable clinical outcomes.",
+      "Our research collaborations explore how mind-body practices relate to symptoms, neural networks, and measurable clinical outcomes.",
     note: "Evidence-informed",
-  },
+  }
   {
     icon: AdvocacyIcon,
     number: "04",
     title: "Professional education",
     description:
-      "Programs for clinicians and organizations that expand awareness of validated non-pharmacological and lifestyle interventions.",
+      "Inquire about opportunities for education and training in integrative neurology and mind-body medicine.",
     note: "For professionals",
   },
 ];
@@ -113,13 +113,15 @@ export default function Home() {
           <div>
             <div className="reveal inline-flex items-center gap-2 rounded-full border border-[#bcd3cc] bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#42645f] shadow-sm backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-[#0f7466]" />
-              Physician-led integrative neurology
+              Holistic Neurology and Educational Resources
             </div>
             <h1 className="reveal reveal-delay-1 mt-7 max-w-4xl font-serif text-[clamp(3.8rem,8vw,7.2rem)] font-semibold leading-[.88] tracking-[-0.055em] text-[#173b38]">
               Care for the brain. Skills for the whole person.
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-[#54706b] md:text-xl md:leading-9">
               We combine neurological expertise with meditation, breathwork, gentle movement, and sound-based relaxation to help people understand and support their nervous system.
+              <br/><br/>
+              We offer twice monthly medtation webinars open to the public, led by Neurologist Dr Sarah Mulukutla.
             </p>
             <div className="reveal reveal-delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#123e3a] px-7 py-4 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(18,62,58,.2)] transition hover:-translate-y-0.5 hover:bg-[#0f7466]">
@@ -131,7 +133,7 @@ export default function Home() {
               <StripeCheckoutButton />
             </div>
             <div data-animate="fade-up" data-animate-delay="4" className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#55706b]">
-              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Board-certified neurology</span>
+              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Board-certified neurologist</span>
               <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Research-informed programs</span>
               <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Monroe, New York</span>
             </div>
@@ -162,8 +164,8 @@ export default function Home() {
             {[
               ["2012", "Meditation teaching since"],
               ["6–8 weeks", "Structured online programs"],
-              ["NY + CT", "Consultation availability"],
-              ["Research", "Objective clinical inquiry"],
+              ["NY", "Consultation availability"],
+              ["Neuroscience", "Guiding Every Program"],
             ].map(([value, label], index) => (
               <div key={label} data-animate="fade-up" data-animate-delay={index} className={`px-4 ${index > 0 ? "md:border-l md:border-[#d6e4df]" : ""}`}>
                 <p className="font-serif text-3xl font-semibold text-[#173b38]">{value}</p>
