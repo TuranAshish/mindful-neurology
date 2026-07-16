@@ -119,6 +119,7 @@ export default function Home() {
               Care for the brain. Skills for the whole person.
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-[#54706b] md:text-xl md:leading-9">
+              <br/>
               We combine neurological expertise with meditation, breathwork, gentle movement, and sound-based relaxation to help people understand and support their nervous system.
               <br/><br/>
               We offer twice monthly medtation webinars open to the public, led by Neurologist Dr Sarah Mulukutla.
