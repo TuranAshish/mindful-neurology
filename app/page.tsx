@@ -348,35 +348,263 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="relative overflow-hidden bg-[#f1f7f4] py-24 md:py-32">
-        <div className="motion-orb motion-orb-c absolute -left-36 bottom-0 h-[420px] w-[420px] rounded-full bg-[#cfe7df]/60 blur-3xl" />
-        <div className="relative mx-auto grid max-w-[1240px] gap-14 px-5 lg:grid-cols-[.82fr_1.18fr] lg:items-start lg:px-8">
-          <div>
-            <SectionHeading eyebrow="Say hello" title="Tell us what kind of support you are looking for." copy="Use this form to inquire about integrative neurology consultations, meditation support, retreats, professional education, or upcoming events. We typically respond within 1–2 business days." />
-
-            <div className="mt-10 grid gap-4">
-              <a data-animate="fade-right" data-animate-delay="1" href="tel:+15168842442" className="flex items-center gap-4 rounded-2xl border border-[#d5e4df] bg-white/70 p-4 transition hover:border-[#0f7466]">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-[#e2f1ec] text-[#0f7466]"><PhoneIcon className="h-5 w-5" /></span>
-                <span><span className="block text-xs font-bold uppercase tracking-[.16em] text-[#80958f]">Phone</span><span className="mt-1 block font-semibold text-[#173b38]">516-884-2442</span></span>
-              </a>
-              <div data-animate="fade-right" data-animate-delay="2" className="flex items-center gap-4 rounded-2xl border border-[#d5e4df] bg-white/70 p-4">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-[#e2f1ec] text-[#0f7466]"><LocationIcon className="h-5 w-5" /></span>
-                <span><span className="block text-xs font-bold uppercase tracking-[.16em] text-[#80958f]">Clinic</span><span className="mt-1 block font-semibold text-[#173b38]">Monroe, New York</span></span>
+      <section
+        id="contact"
+        className="relative overflow-hidden bg-[#f1f7f4] dark:bg-[#081312] py-24 md:py-32"
+      >
+        {/* Background Orbs */}
+        <div className="motion-orb motion-orb-c absolute -left-36 bottom-0 h-[420px] w-[420px] rounded-full bg-[#cfe7df]/60 dark:bg-[#0f7466]/20 blur-3xl" />
+        <div className="absolute -right-40 top-0 h-[420px] w-[420px] rounded-full bg-[#dff5ef]/50 dark:bg-[#1d6f63]/15 blur-3xl" />
+      
+        {/* Main Container */}
+        <div
+          className="
+            relative
+            mx-auto
+            max-w-[1240px]
+      
+            rounded-[36px]
+      
+            border
+            border-[#dce9e4]
+            dark:border-white/10
+      
+            bg-white/45
+            dark:bg-white/[0.03]
+      
+            backdrop-blur-xl
+      
+            shadow-[0_25px_80px_rgba(17,40,34,.08)]
+            dark:shadow-[0_40px_120px_rgba(0,0,0,.45)]
+      
+            p-6
+            md:p-10
+            lg:p-14
+          "
+        >
+          <div className="grid gap-14 lg:grid-cols-[.82fr_1.18fr] lg:items-start">
+            {/* LEFT COLUMN */}
+            <div>
+              <SectionHeading
+                eyebrow="Say hello"
+                title="Tell us what kind of support you are looking for."
+                copy="Use this form to inquire about integrative neurology consultations, meditation support, retreats, professional education, or upcoming events. We typically respond within 1–2 business days."
+              />
+      
+              <div className="mt-10 grid gap-5">
+                {/* Phone */}
+                <a
+                  data-animate="fade-right"
+                  data-animate-delay="1"
+                  href="tel:+15168842442"
+                  className="
+                    group
+                    flex
+                    items-center
+                    gap-4
+      
+                    rounded-2xl
+      
+                    border
+                    border-[#d6e5df]
+                    dark:border-white/10
+      
+                    bg-white/85
+                    dark:bg-white/[0.04]
+      
+                    backdrop-blur-md
+      
+                    p-5
+      
+                    transition-all
+                    duration-300
+      
+                    hover:-translate-y-1
+                    hover:border-[#0f7466]
+                    dark:hover:border-[#2fb7a2]
+      
+                    hover:shadow-xl
+                  "
+                >
+                  <span className="grid h-12 w-12 place-items-center rounded-full bg-[#e6f4ef] dark:bg-[#12342f] text-[#0f7466] dark:text-[#5dd9c2] transition-colors">
+                    <PhoneIcon className="h-5 w-5" />
+                  </span>
+      
+                  <span>
+                    <span className="block text-xs font-bold uppercase tracking-[.16em] text-[#7b8d88] dark:text-[#8fa6a0]">
+                      Phone
+                    </span>
+      
+                    <span className="mt-1 block text-lg font-semibold text-[#173b38] dark:text-white">
+                      516-884-2442
+                    </span>
+                  </span>
+                </a>
+      
+                {/* Location */}
+                <div
+                  data-animate="fade-right"
+                  data-animate-delay="2"
+                  className="
+                    flex
+                    items-center
+                    gap-4
+      
+                    rounded-2xl
+      
+                    border
+                    border-[#d6e5df]
+                    dark:border-white/10
+      
+                    bg-white/85
+                    dark:bg-white/[0.04]
+      
+                    backdrop-blur-md
+      
+                    p-5
+      
+                    transition-all
+                    duration-300
+      
+                    hover:-translate-y-1
+                    hover:border-[#0f7466]
+                    dark:hover:border-[#2fb7a2]
+      
+                    hover:shadow-xl
+                  "
+                >
+                  <span className="grid h-12 w-12 place-items-center rounded-full bg-[#e6f4ef] dark:bg-[#12342f] text-[#0f7466] dark:text-[#5dd9c2]">
+                    <LocationIcon className="h-5 w-5" />
+                  </span>
+      
+                  <span>
+                    <span className="block text-xs font-bold uppercase tracking-[.16em] text-[#7b8d88] dark:text-[#8fa6a0]">
+                      Clinic
+                    </span>
+      
+                    <span className="mt-1 block text-lg font-semibold text-[#173b38] dark:text-white">
+                      Monroe, New York
+                    </span>
+                  </span>
+                </div>
+      
+                {/* Response Time */}
+                <div
+                  data-animate="fade-right"
+                  data-animate-delay="3"
+                  className="
+                    flex
+                    items-center
+                    gap-4
+      
+                    rounded-2xl
+      
+                    border
+                    border-[#d6e5df]
+                    dark:border-white/10
+      
+                    bg-white/85
+                    dark:bg-white/[0.04]
+      
+                    backdrop-blur-md
+      
+                    p-5
+      
+                    transition-all
+                    duration-300
+      
+                    hover:-translate-y-1
+                    hover:border-[#0f7466]
+                    dark:hover:border-[#2fb7a2]
+      
+                    hover:shadow-xl
+                  "
+                >
+                  <span className="grid h-12 w-12 place-items-center rounded-full bg-[#e6f4ef] dark:bg-[#12342f] text-[#0f7466] dark:text-[#5dd9c2]">
+                    <MailIcon className="h-5 w-5" />
+                  </span>
+      
+                  <span>
+                    <span className="block text-xs font-bold uppercase tracking-[.16em] text-[#7b8d88] dark:text-[#8fa6a0]">
+                      Response Time
+                    </span>
+      
+                    <span className="mt-1 block text-lg font-semibold text-[#173b38] dark:text-white">
+                      Usually within 1–2 business days
+                    </span>
+                  </span>
+                </div>
               </div>
-              <div data-animate="fade-right" data-animate-delay="3" className="flex items-center gap-4 rounded-2xl border border-[#d5e4df] bg-white/70 p-4">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-[#e2f1ec] text-[#0f7466]"><MailIcon className="h-5 w-5" /></span>
-                <span><span className="block text-xs font-bold uppercase tracking-[.16em] text-[#80958f]">Response time</span><span className="mt-1 block font-semibold text-[#173b38]">Usually within 1–2 business days</span></span>
+      
+              {/* Emergency Notice */}
+              <div
+                data-animate="fade-up"
+                data-animate-delay="4"
+                className="
+                  mt-8
+      
+                  rounded-2xl
+      
+                  border
+                  border-[#f1dba4]
+                  dark:border-[#6c5627]
+      
+                  bg-[#fff8e9]
+                  dark:bg-[#2b2213]
+      
+                  p-5
+      
+                  text-sm
+                  leading-6
+      
+                  text-[#7a602d]
+                  dark:text-[#f1d48e]
+                "
+              >
+                <strong className="font-semibold">
+                  Medical emergency?
+                </strong>{" "}
+                Do not use this form. Call <strong>911</strong> or go to the
+                nearest emergency department.
               </div>
             </div>
-
-            <div data-animate="fade-up" data-animate-delay="4" className="mt-8 rounded-2xl bg-[#fff7e8] p-5 text-sm leading-6 text-[#795f2f]">
-              <strong>Medical emergency?</strong> Do not use this form. Call 911 or go to the nearest emergency department.
+      
+            {/* RIGHT COLUMN */}
+            <div
+              data-animate="fade-left"
+              className="
+                relative
+      
+                rounded-[32px]
+      
+                border
+                border-[#d7e5df]
+                dark:border-white/10
+      
+                bg-white/90
+                dark:bg-[#0d1918]/95
+      
+                backdrop-blur-xl
+      
+                p-7
+                md:p-10
+      
+                shadow-[0_30px_90px_rgba(15,30,25,.10)]
+                dark:shadow-[0_40px_120px_rgba(0,0,0,.55)]
+      
+                transition-all
+                duration-300
+              "
+            >
+              {/* Decorative Border */}
+              <div className="pointer-events-none absolute inset-0 rounded-[32px] border border-white/40 dark:border-white/5" />
+      
+              <ContactForm />
             </div>
           </div>
-          <ContactForm />
         </div>
       </section>
-
+      
       <footer className="bg-[#0d2f2b] text-white">
         <div className="mx-auto max-w-[1240px] px-5 py-14 lg:px-8">
           <div className="grid gap-10 border-b border-white/10 pb-12 md:grid-cols-[1.2fr_.8fr_.8fr]">
