@@ -70,13 +70,13 @@ const team = [
   {
     name: "Victoria Castillo",
     role: "Patient Coordinator",
-    image: "/images/erin-hyland.png",
+    image: "/images/",
     bio: "Serves as the primary point of contact for patients and coordinates in-person gatherings programs",
   },
   {
     name: "Kenneth Pugh, PhD",
     role: "Research Mentor",
-    image: "/images/erin-hyland.png",
+    image: "/images/kenneth.png",
     bio: "A leading cognitive neuroscientist whose expertise in multimodal neuroimaging, learning, and brain plasticity helps guide Mindful Neurology's research on meditation and neurological health.",
   },
 ];
