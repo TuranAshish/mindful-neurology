@@ -20,6 +20,23 @@ const testimonials = [
     quote: "It is empowering to understand how integrative therapies can help manage Parkinson’s disease alongside pharmacological treatment.",
     author: "Patient, age 63",
   },
+  {
+    quote: "Five years later, the mindfulness techniques I learned at Mindful Neurology remain a cornerstone of my daily routine. I use them to focus my thinking and achieve better recall, which is no small task after my significant brain injury which very much disrupted my focus.",
+    author: "Patient, age 58",
+  },
+  {
+    quote: "You introduce to such a science an alternate route for a people that have a lot to bear with PD. An alternate route that actually can work in tandem with classical neurology. This is a ground-breaking endeavor.",
+    author: "Caregiver, age 81",
+  },
+  {
+    quote: "The gift of the program was in hearing voices other than those of gloom and doom (irreversible, degenerative, progressive, etc). Pairing knowledge from western medicine especially regarding neuroplasticity, with the ancient practices developed in the East – this pairing satisfied both my right and left brains and made space for a modicum of hope.",
+    author: "Course Participant, age 68",
+  },
+  {
+    quote: "This is a field that can truly help people with PD, and no-one better than Sarah and her team.",
+    author: "Patient and Course Participant, Age 77",
+  },
+
 ];
 
 export function Testimonials() {
