@@ -70,7 +70,7 @@ const team = [
   {
     name: "Victoria Castillo",
     role: "Patient Coordinator",
-    image: "/images/",
+    image: "/images/favicon-32.png",
     bio: "Serves as the primary point of contact for patients and coordinates in-person gatherings programs",
   },
   {
