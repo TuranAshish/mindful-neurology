@@ -70,7 +70,7 @@ const team = [
   {
     name: "Victoria Castillo",
     role: "Patient Coordinator",
-    image: "/images/favicon-32.png",
+    image: "/images/victoria.jpeg",
     bio: "Serves as the primary point of contact for patients and coordinates in-person gatherings programs",
   },
   {
@@ -150,7 +150,7 @@ export default function Home() {
               <p className="mt-1 flex items-center gap-2 font-semibold"><LocationIcon className="h-4 w-4" /> Monroe, NY</p>
             </div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2.75rem] border-[10px] border-white/75 bg-[#d6eae4] shadow-[0_35px_100px_rgba(18,62,58,.19)]">
-              <Image src="/images/dr-mulukutla-speaking.jpg" alt="Dr. Sarah Mulukutla speaking about brain health" fill priority sizes="(max-width: 1024px) 92vw, 46vw" className="object-cover" />
+              <Image src="/images/speaking.png" alt="Dr. Sarah Mulukutla speaking about brain health" fill priority sizes="(max-width: 1024px) 92vw, 46vw" className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d2f2b]/70 via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7 text-white md:p-9">
                 <p className="text-xs font-bold uppercase tracking-[.2em] text-[#bfe5da]">Mindful Neurology</p>
