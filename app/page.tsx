@@ -178,37 +178,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/*
       <section id="services" className="bg-[#fbfdfc] py-24 md:py-32">
         <div className="mx-auto max-w-[1240px] px-5 lg:px-8">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-            <SectionHeading eyebrow="Our services" title="Neurological care, education, and practical support." copy="Each offering is designed to complement appropriate medical care while helping people develop repeatable tools for awareness, regulation, and well-being." />
-            <a data-animate="fade-left" href="#contact" className="inline-flex shrink-0 items-center gap-2 self-start text-sm font-bold text-[#0f7466] transition hover:gap-3 lg:self-auto">
-              Find the right starting point <ArrowRightIcon className="h-4 w-4" />
+            <SectionHeading
+              eyebrow="Our services"
+              title="Neurological care, education, and practical support."
+              copy="Each offering is designed to complement appropriate medical care while helping people develop repeatable tools for awareness, regulation, and well-being."
+            />
+            <a
+              data-animate="fade-left"
+              href="#contact"
+              className="inline-flex shrink-0 items-center gap-2 self-start text-sm font-bold text-[#0f7466] transition hover:gap-3 lg:self-auto"
+            >
+              Find the right starting point{" "}
+              <ArrowRightIcon className="h-4 w-4" />
             </a>
           </div>
-
+      
           <div className="mt-14 grid gap-5 md:grid-cols-2">
             {services.map((service) => {
               const Icon = service.icon;
               return (
-                <article key={service.title} data-animate="zoom-in" data-animate-delay={Number(service.number) - 1} data-tilt-card="" className="interactive-card tilt-card group relative overflow-hidden rounded-[2rem] border border-[#dbe7e3] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#a9c9c0] hover:shadow-[0_24px_70px_rgba(18,62,58,.09)] md:p-9">
+                <article
+                  key={service.title}
+                  data-animate="zoom-in"
+                  data-animate-delay={Number(service.number) - 1}
+                  data-tilt-card=""
+                  className="interactive-card tilt-card group relative overflow-hidden rounded-[2rem] border border-[#dbe7e3] bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#a9c9c0] hover:shadow-[0_24px_70px_rgba(18,62,58,.09)] md:p-9"
+                >
                   <div className="flex items-start justify-between">
                     <div className="grid h-14 w-14 place-items-center rounded-2xl bg-[#e7f3ef] text-[#0f7466] transition group-hover:bg-[#123e3a] group-hover:text-white">
                       <Icon className="h-7 w-7" />
                     </div>
-                    <span className="font-serif text-2xl text-[#b4c6c1]">{service.number}</span>
+      
+                    <span className="font-serif text-2xl text-[#b4c6c1]">
+                      {service.number}
+                    </span>
                   </div>
-                  <p className="mt-10 text-xs font-bold uppercase tracking-[.17em] text-[#72908a]">{service.note}</p>
-                  <h3 className="mt-3 font-serif text-3xl font-semibold tracking-[-0.025em] text-[#173b38]">{service.title}</h3>
-                  <p className="mt-4 max-w-xl leading-7 text-[#617a75]">{service.description}</p>
+      
+                  <p className="mt-10 text-xs font-bold uppercase tracking-[.17em] text-[#72908a]">
+                    {service.note}
+                  </p>
+      
+                  <h3 className="mt-3 font-serif text-3xl font-semibold tracking-[-0.025em] text-[#173b38]">
+                    {service.title}
+                  </h3>
+      
+                  <p className="mt-4 max-w-xl leading-7 text-[#617a75]">
+                    {service.description}
+                  </p>
+      
                   <div className="mt-8 h-px bg-[#e3ece9]" />
-                  <a href="#contact" className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#315c56] transition group-hover:gap-3 group-hover:text-[#0f7466]">Learn more <ArrowRightIcon className="h-4 w-4" /></a>
+      
+                  <a
+                    href="#contact"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#315c56] transition group-hover:gap-3 group-hover:text-[#0f7466]"
+                  >
+                    Learn more{" "}
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </a>
                 </article>
               );
             })}
           </div>
         </div>
       </section>
+      */}
 
       <section id="approach" className="relative overflow-hidden bg-[#123e3a] py-24 md:py-32">
         <div className="noise absolute inset-0" />
