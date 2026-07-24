@@ -134,9 +134,10 @@ export default function Home() {
               <StripeCheckoutButton />
             </div>
             <div data-animate="fade-up" data-animate-delay="4" className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#55706b]">
-              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Board-certified neurologist</span>
-              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Research-informed programs</span>
-              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Monroe, New York</span>
+              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Founded by Sarah Mulukutla MD, MPH, FAAN Board-certified neurologist</span>
+              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Faculty, Yale School of Medicine</span>
+              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> Founder, AAN Neurohealth & Integrative Neurology Section</span>
+              <span className="inline-flex items-center gap-2"><CheckIcon className="h-4 w-4 text-[#0f7466]" /> 14+ Years Teaching Meditation</span>
             </div>
           </div>
 
