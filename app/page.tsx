@@ -54,10 +54,10 @@ const services = [
 ];
 
 const approach = [
-  ["Understand", "Learn how stress, attention, fatigue, movement, and sensory load can influence the nervous system."],
-  ["Practice", "Build repeatable skills through breathwork, meditation, gentle movement, and structured relaxation."],
-  ["Observe", "Notice patterns with greater clarity and identify what supports steadier day-to-day function."],
-  ["Integrate", "Use practical tools alongside appropriate neurological care, medication, rehabilitation, and daily routines."],
+  ["Understand", "Study and synthesize the neuroscience of meditation, movement, attention, stress regulation, and the nervous system."],
+  ["Investigate", "Develop hypothesis-driven clinical studies to examine how mind-body practices may influence neurological function and well-being."],
+  ["Apply", "Refine these approaches through clinical and community programs, real-world feedback, and collaborations with healthcare systems and community organizations."],
+  ["Translate", "Use creative methods to transform scientific and clinical knowledge into accessible educational experiences, practical tools, and public programs."],
 ];
 
 const team = [
@@ -252,7 +252,7 @@ export default function Home() {
         <div className="absolute right-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full border border-white/10" />
         <div className="absolute right-[-70px] top-[-30px] h-[280px] w-[280px] rounded-full border border-white/10" />
         <div className="relative mx-auto max-w-[1240px] px-5 lg:px-8">
-          <SectionHeading light eyebrow="Our approach" title="From understanding the nervous system to using skills in everyday life." copy="Mindful Neurology brings together clinical education and guided experience. The goal is not to promise a cure, but to help people build informed, sustainable practices alongside their medical care." />
+          <SectionHeading light eyebrow="Our approach" title="From neuroscience to meaningful experiences in everyday life." copy="Mindful Neurology brings together neuroscience, clinical research, real-world practice, and creative collaboration. This process helps translate emerging knowledge into practical educational and skill-building experiences for people living with neurological conditions." />
 
           <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
             {approach.map(([title, text], index) => (
