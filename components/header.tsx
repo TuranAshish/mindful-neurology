@@ -7,7 +7,6 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { StripeCheckoutButton } from "@/components/stripe-checkout-button";
 
 const nav = [
-  ["Services", "#services"],
   ["Our approach", "#approach"],
   ["Science", "#science"],
   ["Team", "#team"],
