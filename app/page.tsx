@@ -300,7 +300,7 @@ export default function Home() {
             </div>
 
             <div>
-              <SectionHeading eyebrow="The science" title="Education grounded in neurology and shaped by research." copy="Neuroplasticity describes the brain’s ability to adapt its neural networks. Meditation, attention training, movement, rest, and learning are active areas of scientific study." />
+              <SectionHeading eyebrow="The science" title="Understanding how the nervous system learns, regulates, and adapts." copy="The nervous system is continually adapting to internal signals, environmental demands, and repeated experience. Meditation, breathing, movement, imagery, and restorative practices actively engage the nervous system’s mechanisms for attention, regulation, bodily awareness, and learning. Research is helping clarify how these practices may strengthen the capacity to respond more effectively in daily life." />
               <div className="mt-10 grid gap-4">
                 {[
                   ["What is neuroplasticity?", "The brain continuously reorganizes connections as it responds to new information, repeated practice, and changing environments."],
