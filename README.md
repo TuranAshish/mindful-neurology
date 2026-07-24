@@ -19,7 +19,7 @@ A responsive, accessible rebuild of **mindfulneuro.com** using a modern React/Ne
 - Modern hero and consultation calls to action
 - Trust indicators and clinic information
 - Services
-- Four-step integrative approach
+- Four-step  approach
 - Neuroplasticity and research education
 - Mind-body practice gallery
 - Team profiles

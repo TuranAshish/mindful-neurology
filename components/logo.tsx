@@ -25,7 +25,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
             Mindful Neurology
           </span>
           <span className="mt-1 block text-[0.63rem] font-semibold uppercase tracking-[0.19em] text-[#647c78]">
-            Integrative Neurology Clinic
+            Neurology  |  Education  |  Research
           </span>
         </span>
       )}
