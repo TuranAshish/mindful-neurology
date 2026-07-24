@@ -120,9 +120,9 @@ export default function Home() {
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-[#54706b] md:text-xl md:leading-9">
               <br/>
-              We combine neurological expertise with meditation, breathwork, gentle movement, and sound-based relaxation to help people understand and support their nervous system.
+              We combine neuroscience and neurology with meditation, breathwork, gentle movement, and sound-based practices to help people better understand and support their nervous system.
               <br/><br/>
-              We offer twice monthly medtation webinars open to the public, led by Neurologist Dr Sarah Mulukutla.
+              Join us through physician-led experiential programs, webinars, coaching, community events, and clinical consultations.
             </p>
             <div className="reveal reveal-delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#123e3a] px-7 py-4 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(18,62,58,.2)] transition hover:-translate-y-0.5 hover:bg-[#0f7466]">
