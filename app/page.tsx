@@ -142,10 +142,10 @@ export default function Home() {
           </div>
 
           <div data-animate="zoom-in" data-tilt-card="" className="tilt-card hero-visual relative mx-auto w-full max-w-[570px] lg:justify-self-end">
-            <div className="absolute -left-8 top-20 z-20 animate-[float_6s_ease-in-out_infinite] rounded-2xl border border-white/70 bg-white/88 px-4 py-3 shadow-[0_18px_50px_rgba(18,62,58,.16)] backdrop-blur">
-              {/*<p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#77908a]">Clinical + practical</p>
-              <p className="mt-1 font-serif text-xl font-semibold text-[#173b38]">Whole-person care</p>*/}
-            </div>
+            {/*<div className="absolute -left-8 top-20 z-20 animate-[float_6s_ease-in-out_infinite] rounded-2xl border border-white/70 bg-white/88 px-4 py-3 shadow-[0_18px_50px_rgba(18,62,58,.16)] backdrop-blur">
+              <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#77908a]">Clinical + practical</p>
+              <p className="mt-1 font-serif text-xl font-semibold text-[#173b38]">Whole-person care</p>
+            </div>*/}
             <div className="absolute -right-4 bottom-24 z-20 animate-[float_7s_ease-in-out_infinite] rounded-2xl bg-[#123e3a] px-4 py-3 text-white shadow-[0_18px_50px_rgba(18,62,58,.22)]">
               <p className="text-[10px] font-bold uppercase tracking-[.18em] text-white/60">Practice location</p>
               <p className="mt-1 flex items-center gap-2 font-semibold"><LocationIcon className="h-4 w-4" /> Monroe, NY</p>
