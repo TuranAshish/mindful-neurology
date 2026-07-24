@@ -113,7 +113,7 @@ export default function Home() {
           <div>
             <div className="reveal inline-flex items-center gap-2 rounded-full border border-[#bcd3cc] bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#42645f] shadow-sm backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-[#0f7466]" />
-              Holistic Neurology and Educational Resources
+              Neuroscience made practical
             </div>
             <h1 className="reveal reveal-delay-1 mt-7 max-w-4xl font-serif text-[clamp(3.8rem,8vw,7.2rem)] font-semibold leading-[.88] tracking-[-0.055em] text-[#173b38]">
               Care for the brain. Skills for the whole person.
