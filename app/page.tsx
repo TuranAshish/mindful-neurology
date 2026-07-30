@@ -24,7 +24,7 @@ const services = [
     number: "01",
     title: "Neurology consultation",
     description:
-      "Individualized neurological evaluation for people in New York or Connecticut, and for patients who travel to our Monroe, NY office.",
+      "Individualized mind-body consultations for people seeking an integrative approach to neurological care with offices in Monroe, NY and NYC.",
     note: "Clinical care",
   },
   {
@@ -46,10 +46,10 @@ const services = [
   {
     icon: AdvocacyIcon,
     number: "04",
-    title: "Professional education",
+    title: "Community Events",
     description:
-      "Inquire about opportunities for education and training in integrative neurology and mind-body medicine.",
-    note: "For professionals",
+      "Join us for sound healing, Parkinson's workshops, educational seminars, and other special events throughout the year.",
+    note: "NYC in-person gatherings",
   },
 ];
 
@@ -178,14 +178,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/*
+
       <section id="services" className="bg-[#fbfdfc] py-24 md:py-32">
         <div className="mx-auto max-w-[1240px] px-5 lg:px-8">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <SectionHeading
               eyebrow="Our services"
-              title="Neurological care, education, and practical support."
-              copy="Each offering is designed to complement appropriate medical care while helping people develop repeatable tools for awareness, regulation, and well-being."
+              title="Clinical care, research, education, and community."
+              copy="Each offering integrates neuroscience, mindfulness, and lifestyle medicine to improve neurological health and well-being."
             />
             <a
               data-animate="fade-left"
@@ -245,7 +245,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      */}
+
 
       <section id="approach" className="relative overflow-hidden bg-[#123e3a] py-24 md:py-32">
         <div className="noise absolute inset-0" />
@@ -295,7 +295,7 @@ export default function Home() {
               </div>
               <div data-animate="fade-left" data-animate-delay="2" className="absolute -bottom-6 -right-3 max-w-[260px] rounded-2xl border border-white/60 bg-white/90 p-5 shadow-[0_18px_50px_rgba(18,62,58,.15)] backdrop-blur md:-right-8">
                 <p className="text-xs font-bold uppercase tracking-[.17em] text-[#0f7466]">Neuroplasticity</p>
-                <p className="mt-2 font-serif text-xl font-semibold leading-snug text-[#173b38]">The brain can modify its networks in response to learning and experience.</p>
+                <p className="mt-2 font-serif text-xl font-semibold leading-snug text-[#173b38]">The brain can modify its networks in response to learning, practice, and experience.</p>
               </div>
             </div>
 
@@ -303,9 +303,9 @@ export default function Home() {
               <SectionHeading eyebrow="The science" title="Understanding how the nervous system learns, regulates, and adapts." copy="The nervous system is continually adapting to internal signals, environmental demands, and repeated experience. Meditation, breathing, movement, imagery, and restorative practices actively engage the nervous system’s mechanisms for attention, regulation, bodily awareness, and learning. Research is helping clarify how these practices may strengthen the capacity to respond more effectively in daily life." />
               <div className="mt-10 grid gap-4">
                 {[
-                  ["What is neuroplasticity?", "The brain continuously reorganizes connections as it responds to new information, repeated practice, and changing environments."],
-                  ["How might meditation help?", "Meditation can train attention, self-awareness, and the capacity to notice habitual patterns before choosing a different response."],
-                  ["Why include movement and relaxation?", "Gentle movement, breath, and structured rest can support body awareness and may help people explore stress-sensitive symptoms."],
+                  ["The nervous system is dynamic", "Brain networks involved in attention, emotion, bodily awareness, and movement interact continuously, shaping how we respond from moment to moment."],
+                  ["Repeated practice can build capacity", "Consistent practice gives the nervous system repeated opportunities to strengthen useful patterns of attention, regulation, movement, and recovery."],
+                  ["Mind-body practices may support regulation and learning", "Meditation, breathwork, movement, imagery, and relaxation can engage attention, autonomic regulation, bodily awareness, and sensorimotor processes, creating conditions that may support adaptive learning."],
                 ].map(([title, text], index) => (
                   <div key={title} data-animate="fade-left" data-animate-delay={index} className="rounded-2xl border border-[#d9e6e1] bg-white p-5 md:p-6">
                     <div className="flex gap-4">
@@ -321,23 +321,51 @@ export default function Home() {
             </div>
           </div>
 
+          {/*
           <div className="mt-24 grid gap-5 md:grid-cols-3">
             {[
-              ["/images/neurons.jpg", "Neural networks", "Explore how neurons communicate and how learning can shape patterns over time."],
-              ["/images/restorative-practice.jpg", "Restorative practice", "Create space for rest, body awareness, and nervous-system downshifting."],
-              ["/images/dr-mulukutla-speaking.jpg", "Clinical education", "Connect practical techniques with clear explanations of anatomy and function."],
+              [
+                "/images/neurons.jpg",
+                "Neural networks",
+                "Explore how neurons communicate and how learning can shape patterns over time.",
+              ],
+              [
+                "/images/restorative-practice.jpg",
+                "Restorative practice",
+                "Create space for rest, body awareness, and nervous-system downshifting.",
+              ],
+              [
+                "/images/dr-mulukutla-speaking.jpg",
+                "Clinical education",
+                "Connect practical techniques with clear explanations of anatomy and function.",
+              ],
             ].map(([image, title, text]) => (
-              <article key={title} data-animate="zoom-in" data-tilt-card="" className="interactive-card tilt-card group overflow-hidden rounded-[2rem] bg-white shadow-[0_18px_60px_rgba(18,62,58,.07)]">
+              <article
+                key={title}
+                data-animate="zoom-in"
+                data-tilt-card=""
+                className="interactive-card tilt-card group overflow-hidden rounded-[2rem] bg-white shadow-[0_18px_60px_rgba(18,62,58,.07)]"
+              >
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image src={image} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105" />
+                  <Image
+                    src={image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
                 </div>
+
                 <div className="p-6">
-                  <h3 className="font-serif text-3xl font-semibold text-[#173b38]">{title}</h3>
+                  <h3 className="font-serif text-3xl font-semibold text-[#173b38]">
+                    {title}
+                  </h3>
                   <p className="mt-3 leading-7 text-[#617a75]">{text}</p>
                 </div>
               </article>
             ))}
           </div>
+          */}
         </div>
       </section>
 
