@@ -161,6 +161,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/*
         <div className="relative border-y border-[#d6e4df] bg-white/65 backdrop-blur-md">
           <div className="mx-auto grid max-w-[1240px] grid-cols-2 gap-y-8 px-5 py-7 md:grid-cols-4 lg:px-8">
             {[
@@ -169,13 +170,23 @@ export default function Home() {
               ["Education", "Join our bi-monthly webinar"],
               ["Care", "Clinical Consultations Available"],
             ].map(([value, label], index) => (
-              <div key={label} data-animate="fade-up" data-animate-delay={index} className={`px-4 ${index > 0 ? "md:border-l md:border-[#d6e4df]" : ""}`}>
-                <p className="font-serif text-3xl font-semibold text-[#173b38]">{value}</p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-[.13em] text-[#718984]">{label}</p>
+              <div
+                key={label}
+                data-animate="fade-up"
+                data-animate-delay={index}
+                className={`px-4 ${index > 0 ? "md:border-l md:border-[#d6e4df]" : ""}`}
+              >
+                <p className="font-serif text-3xl font-semibold text-[#173b38]">
+                  {value}
+                </p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[.13em] text-[#718984]">
+                  {label}
+                </p>
               </div>
             ))}
           </div>
         </div>
+        */}
       </section>
 
 
